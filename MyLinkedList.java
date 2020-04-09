@@ -1,4 +1,6 @@
 import java.util.Scanner;
+//This is the file which is basically realted to the LinkedList
+
 class Node
 {
 	private int data;
