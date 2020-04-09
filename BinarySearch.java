@@ -1,6 +1,7 @@
 import java.util.Arrays;
 
 import java.util.Scanner;
+//This is the program to illutrate the binary search perform in //the data structure
 class Searching{
     public int SearchNum(int arr[],int l,int u,int number){
        int m=(l+u)/2;
