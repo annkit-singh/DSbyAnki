@@ -67,6 +67,31 @@ class BTree{
         }
     }
 }
+
+        public void PostTwoStack(Node root){
+            if(root==null)
+            return ;
+            Stack <Node> s=new Stack();
+            s.push(root);
+            Stack <Integer> out=new Stack();
+            while(!s.isEmpty()){
+                Node curr=s.pop();
+                out.push(curr.data);
+
+                if(curr.left!=null){
+                    s.push(curr.left);
+                }
+                if(curr.right!=null){
+                    s.push(curr.right);
+                }
+            }
+            while(!out.isEmpty()){
+                System.out.println(out.pop()+" ");
+            }
+
+         
+            
+        }
 public static void preOrder(Node n){
     if(n==null){
         return;
