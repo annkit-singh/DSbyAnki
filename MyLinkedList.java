@@ -1,3 +1,4 @@
+package utility;
 import java.util.Scanner;
 //This is the file which is basically realted to the LinkedList
 
