@@ -160,3 +160,25 @@ public Node InsertNodeBst(Node n,int value){
             return 1 +Math.max(height(n.left),height(n.right));
         }
       }
+
+public static int height(Node root){
+    if(root==null)
+    return 0;
+
+
+    return 1+Math.max(height(root.left),height(root.right));
+}
+
+public static int diameter(Node root){
+    if(root==null)
+    return 0;
+
+    int heightl=height(root.left);
+    int heightr=height(root.right);
+
+   int dl= diameter(root.left);
+   int dr= diameter(root.right);
+
+
+    return Math.max(heightl+heightr+1,Math.max(dl,dr));
+}
