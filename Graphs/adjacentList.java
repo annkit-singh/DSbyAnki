@@ -61,6 +61,17 @@ public class MapCheck {
 		return visited;	
 		
 	}
+	public void removeVertix(String label){
+        adjVertix.values().stream().forEach(e->e.remove(label));
+        adjVertix.remove(label);
+    }
+
+    public void removeEdge(String b,String d)
+	{
+        adjVertix.get(b).remove(d);
+        adjVertix.get(d).remove(b);
+
+    }
 	
 	public static void main(String [] args) {
 	MapCheck m=new MapCheck();
