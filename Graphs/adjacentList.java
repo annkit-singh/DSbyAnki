@@ -7,7 +7,7 @@ class Vertice{
 		this.label=label;
 	}
 }
-public class MapCheck {
+public class GraphList {
 	Map<String ,List<String>> adjVertix=new HashMap<String ,List<String>>();
 	void addVertex(String label) {
         adjVertix.putIfAbsent(label,new ArrayList<String>());
@@ -20,7 +20,7 @@ public class MapCheck {
 		}
 	
 	
-	public LinkedHashSet<String > DFS(MapCheck g,String root){
+	public LinkedHashSet<String > DFS(GraphList g,String root){
 		LinkedHashSet<String> visited =new LinkedHashSet<String>();
 		
 		Stack<String> stac=new Stack<String> ();
@@ -40,7 +40,7 @@ public class MapCheck {
 		
 		
 	}
-	public LinkedHashSet<String > BFS(MapCheck g,String root){
+	public LinkedHashSet<String > BFS(GraphList g,String root){
 		LinkedHashSet<String> visited =new LinkedHashSet<String>();
 		
 		Queue<String> queue=new ArrayDeque<String> ();
@@ -74,7 +74,7 @@ public class MapCheck {
     }
 	
 	public static void main(String [] args) {
-	MapCheck m=new MapCheck();
+	GraphList m=new GraphList();
 	m.addVertex("1");
 	m.addVertex("2");
 	m.addVertex("3");
