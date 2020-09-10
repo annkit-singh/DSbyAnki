@@ -7,7 +7,7 @@ class Vertice{
 		this.label=label;
 	}
 }
-public class MapCheck {
+public class GraphList {
 	Map<String ,List<String>> adjVertix=new HashMap<String ,List<String>>();
 	void addVertex(String label) {
         adjVertix.putIfAbsent(label,new ArrayList<String>());
@@ -74,7 +74,7 @@ public class MapCheck {
     }
 	
 	public static void main(String [] args) {
-	MapCheck m=new MapCheck();
+	GraphList m=new GraphList();
 	m.addVertex("1");
 	m.addVertex("2");
 	m.addVertex("3");
