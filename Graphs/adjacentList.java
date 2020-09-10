@@ -20,7 +20,7 @@ public class GraphList {
 		}
 	
 	
-	public LinkedHashSet<String > DFS(MapCheck g,String root){
+	public LinkedHashSet<String > DFS(GraphList g,String root){
 		LinkedHashSet<String> visited =new LinkedHashSet<String>();
 		
 		Stack<String> stac=new Stack<String> ();
@@ -40,7 +40,7 @@ public class GraphList {
 		
 		
 	}
-	public LinkedHashSet<String > BFS(MapCheck g,String root){
+	public LinkedHashSet<String > BFS(GraphList g,String root){
 		LinkedHashSet<String> visited =new LinkedHashSet<String>();
 		
 		Queue<String> queue=new ArrayDeque<String> ();
