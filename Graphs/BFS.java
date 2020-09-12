@@ -2,6 +2,7 @@ import java.util.Queue;
 import java.util.*;
 // This DFS is for undirected graph only
 // vertex class
+//BFS is implemented here by using adjacency Matric
 
 class Vertex{
     public char label;
