@@ -23,6 +23,15 @@ public class Demo {
 
 
     //   System.out.println(multi);
+        
+        BigInteger b1=new BigInteger("21");
+    BigInteger b2=new BigInteger("21");
+   System.out.println( b1.compareTo(b2));  //b1<b2 return -1
+                                           //b1>b2 return 1
+                                           //b1==b2 return 0
+            System.out.println(
+            b1.equals(b2));
+
 
     }
     
